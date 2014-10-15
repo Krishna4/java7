@@ -9,3 +9,4 @@ RUN apt-get update
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true |  debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 RUN apt-get -y install oracle-java7-installer 
+CMD ["bash"]
